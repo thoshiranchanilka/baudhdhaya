@@ -4,7 +4,6 @@ import {
   Heading,
   Image,
   Container,
-  Text,
   Button,
   Stack,
   Icon,
