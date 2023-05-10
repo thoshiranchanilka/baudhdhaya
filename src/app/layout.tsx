@@ -8,11 +8,6 @@ import { useEffect, useState } from "react";
 import Nav from "./component/nav";
 import Footer from "./component/footer";
 
-export const metadata = {
-  title: 'buddaya',
-  description: 'description',
-}
-
 export default function RootLayout({
   children,
 }: {

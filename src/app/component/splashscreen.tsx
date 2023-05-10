@@ -1,6 +1,6 @@
 "use client";
 import { Flex, Image } from "@chakra-ui/react";
-import { motion } from "framer-motion";
+import { easeIn, easeInOut, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function SplashScreen({ finishLoading }: any) {
@@ -25,12 +25,10 @@ export default function SplashScreen({ finishLoading }: any) {
       <Flex align={"center"} justify={"center"} h={"100vh"}>
         <motion.div
           initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 20,
-          }}
+          animate={{ 
+            scale: [0, 2, 1],
+            rotate: [0, 180, 0], }}
+            
         >
           <Image src="./favicon.ico" alt="Logo" width={32} height={32} />
         </motion.div>

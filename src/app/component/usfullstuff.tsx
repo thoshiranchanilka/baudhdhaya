@@ -11,25 +11,28 @@ import {
   
   const card = [
     {
-      title: 'Product Ad Design.',
+      title: 'පිරිත්.',
       des:
-        'A social media ad that designed for a local medical product.',
+        'සියලුම පිරිත් ඇසීම සදහා පිවිසෙන්න.',
       img:
-        'https://images2.imgbox.com/37/ea/pPWpBsH6_o.png',
+        '/card01.png',
+      a: '#',
     },
     {
-      title: 'Event Ad Design.',
+      title: 'බණ.',
       des:
-        'Pre Event ad that designed for Space Odyssey',
+        'යූ ටියුබ් හි පල වූ බණ නැරඹීමට පිවිසෙන්න.',
       img:
-        'https://images2.imgbox.com/b3/72/QmhiiLdN_o.png',
+        '/card02.png',
+      a: '#',
     },
     {
-      title: 'T-Shirt Design.',
+      title: 'බැති ගී.',
       des:
-        'T shirt design and social media post for Helaya.',
+        'අන්තර්ජාලයෙ හි පල වූ බැති ගී ශ්‍රවනය කිරීමට පිවිසෙන්න.',
       img:
-        'https://images2.imgbox.com/eb/14/JRYzsBbc_o.png',
+        '/card03.png',
+      a: '#',
     },
   ];
   
@@ -37,28 +40,40 @@ import {
     title: string;
     des: string;
     img: string;
+    a: string;
     index: number;
   }
   
   function Card(props: CardProps) {
-    const { title, des, img, index } = props;
+    const { title, des, img, index, a } = props;
     return (
       <Flex
-        boxShadow={'xl'}
-        maxW={'640px'}
-        direction={'column-reverse'}
-        width={'full'}
-        rounded={'3xl'}
+        as='a'
+        href={a}
+        boxShadow='lg'
+        maxW='640px'
+        direction='column-reverse'
+        width='full'
+        rounded='3xl'
         p={7}
-        justifyContent={'center'}
-        position={'relative'}
-        bg={useColorModeValue('gray.200', 'gray.900')}
+        justifyContent='center'
+        position='relative'
+        background={useColorModeValue("pearl.100", "tuatara.800")}
+        border='1px'
+        borderColor={useColorModeValue("tuatara.100", "tuatara.600")}
+        filter='auto' brightness='100%'
+
+        _hover={{
+          brightness: "90%",
+          boxShadow: "2xl",
+          transition: "0.3s ease",
+        }}
         >
         <Flex
           direction={'column'}
           textAlign={'center'}
           justifyContent={'center'}
-          textColor={useColorModeValue('gray.700', 'gray.200')}>
+          textColor={useColorModeValue("ash.800", "ash.200")}>
           <Heading
             fontSize={'lg'}
             pb={2}>
@@ -69,7 +84,7 @@ import {
             textAlign={'justify'}
             fontSize={'sm'} 
             fontWeight={'md'} 
-            textColor={useColorModeValue('gray.500', 'gray.400')}>
+            textColor={useColorModeValue("ash.700", "ash.300")}>
             {des}
           </Text>
           </Box>
@@ -94,50 +109,54 @@ import {
   export default function work() {
     return (
       <Flex
+        background={useColorModeValue("pearl.50", "tuatara.950")}
         textAlign={'center'}
-        pt={20}
-        pb={20}
         justifyContent={'center'}
         direction={'column'}
         width={'full'}
         overflow={'hidden'}>
+        <Box
+          maxW='6xl'
+          width='100%'
+          pt='4'
+          pb='4'
+          px='20'
+          mx='auto'
+          background={useColorModeValue("pearl.100", "tuatara.800")}
+          border='1px'
+          borderColor={useColorModeValue("tuatara.100", "tuatara.600")}
+          boxShadow='xl'
+          rounded='3xl'
+          mt='6'
+        >
         <Heading textAlign={'center'} fontSize={'4xl'} color={useColorModeValue("gray.800", "whiteAlpha.900")}>
-          Some Work I have delivered.
+          ප්‍රයෝජනවත් දේවල්.
         </Heading>
+        </Box>
         <SimpleGrid
           columns={{ base: 1, lg: 3 }}
           spacing={'10'}
-          mt={16}
-          mb={16}
+          mt={6}
           mx={'auto'}>
           {card.map((cardInfo, index) => (
             <Card {...cardInfo} index={index} />
           ))}
         </SimpleGrid>
-        <Text fontSize={'lg'} color={'gray.500'}>
-          Check my work at
-        </Text>
-        <Button
-          as={'a'}
-          href={'https://www.behance.net/thoshirachanilka'}
-          maxW={'160px'}
-          mx={'auto'}
-          px={4}
-          fontSize={'md'}
-          shadow={'xl'}
-          rounded={'full'}
-          bg={useColorModeValue('gray.700', 'gray.600')}
-          color={'white'}
-          
-          _hover={{
-            bg: 'blue.400',
-            boxShadow: '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)',
-          }}
-          _focus={{
-            bg: 'blue.500',
-          }}>
-          Behance.
-        </Button>
+        <Box
+          maxW='6xl'
+          width='100%'
+          height='80px'
+          pt='4'
+          pb='4'
+          px='20'
+          mx='auto'
+          background={useColorModeValue("pearl.100", "tuatara.800")}
+          border='1px'
+          borderColor={useColorModeValue("tuatara.100", "tuatara.600")}
+          boxShadow='xl'
+          rounded='3xl'
+          mt='6'
+        ></Box>
       </Flex>
     );
   }
