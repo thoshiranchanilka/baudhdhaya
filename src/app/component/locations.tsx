@@ -6,7 +6,7 @@ import {
   Box,
 } from '@chakra-ui/react';
 
-export default function About() {
+export default function locations() {
   return (
     <Flex background={useColorModeValue("pearl.50", "tuatara.950")}>
     <Container 

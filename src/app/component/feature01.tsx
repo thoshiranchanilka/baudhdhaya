@@ -10,7 +10,7 @@ import {
     useColorModeValue,
   } from '@chakra-ui/react';
   
-  export default function About() {
+  export default function feature01() {
     return (
       <Flex background={useColorModeValue("pearl.50", "tuatara.950")}>
       <Container 

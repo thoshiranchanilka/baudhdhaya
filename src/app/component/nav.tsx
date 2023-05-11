@@ -15,7 +15,7 @@ const Logo = (_props: any) => {
   );
 };
 
-export default function Simple() {
+export default function nav() {
 const { colorMode, toggleColorMode } = useColorMode();
    return (
     <Box position='fixed' w="100%" zIndex='overlay'>

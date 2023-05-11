@@ -5,7 +5,6 @@ import {
     Flex,
     Heading,
     SimpleGrid,
-    Button,
     useColorModeValue,
   } from '@chakra-ui/react';
   
@@ -90,6 +89,7 @@ import {
           </Box>
         </Flex>
         <Image
+          alt={title}
           src={img}
           height={'200px'}
           width={'200px'}
@@ -106,10 +106,10 @@ import {
     );
   }
   
-  export default function work() {
+  export default function usefullstuff() {
     return (
       <Flex
-        background={useColorModeValue("pearl.50", "tuatara.950")}
+        bg={useColorModeValue("pearl.50", "tuatara.950")}
         textAlign={'center'}
         justifyContent={'center'}
         direction={'column'}
@@ -122,7 +122,7 @@ import {
           pb='4'
           px='20'
           mx='auto'
-          background={useColorModeValue("pearl.100", "tuatara.800")}
+          bg={useColorModeValue("pearl.100", "tuatara.800")}
           border='1px'
           borderColor={useColorModeValue("tuatara.100", "tuatara.600")}
           boxShadow='xl'
@@ -139,7 +139,9 @@ import {
           mt={6}
           mx={'auto'}>
           {card.map((cardInfo, index) => (
+            <div key={index}>
             <Card {...cardInfo} index={index} />
+            </div>
           ))}
         </SimpleGrid>
         <Box

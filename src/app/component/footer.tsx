@@ -11,7 +11,6 @@ import {
     createIcon,
     Flex,
   } from '@chakra-ui/react';
-  import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
   import { ReactNode } from 'react';
   
   const Logo = (_props: any) => {
@@ -71,7 +70,7 @@ import {
     ),
   });
   
-  export default function SmallCentered() {
+  export default function footer() {
     return (
       <Box
         bg={useColorModeValue("pearl.50", "tuatara.950")}
@@ -114,7 +113,6 @@ import {
             </Link>
           </Text>
           <Text textAlign={'center'} color={useColorModeValue("ash.700", "ash.300")} fontSize="xs">
-            <Flex alignItems={'center'}>
               භාවිත තාක්ෂණයන් - &nbsp;{" "}
               <Link href="https://nextjs.org/" isExternal>
                 <NextJsIcon />
@@ -123,8 +121,7 @@ import {
               <Link href="https://chakra-ui.com" isExternal>
                 <ChakraUiIcon />
               </Link>
-            </Flex>
-          </Text>
+            </Text>
           </Container>
         </Box>
       </Box>

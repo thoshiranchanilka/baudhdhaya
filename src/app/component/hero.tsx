@@ -1,20 +1,14 @@
-import Head from 'next/head';
 import {
-  Box,
   Heading,
   Image,
   Container,
-  Button,
   Stack,
-  Icon,
   useColorModeValue,
-  createIcon,
   SimpleGrid,
   Flex,
-  Center,
 } from '@chakra-ui/react';
 
-export default function Hero() {
+export default function hero() {
   return (
     <>
     <Flex background={useColorModeValue("pearl.50", "tuatara.950")}>

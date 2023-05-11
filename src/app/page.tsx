@@ -4,7 +4,6 @@ import Feature01 from "./component/feature01";
 import Feature02 from "./component/feature02";
 import Feature03 from "./component/feature03";
 import UseFullStuff from "./component/usfullstuff";
-import ImgGen from "./component/imggen";
 import Locations from "./component/locations";
 import Vision from "./component/vision";
 
