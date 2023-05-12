@@ -79,15 +79,15 @@ import {
           as={Stack}
           maxW={'6xl'}
           py={4}
-          spacing={4}
+          spacing={{ base: '2', md: '4',}}
           justify={'center'}
           align={'center'}>
           <Logo />
-          <Stack direction={'row'} spacing={'50px'}>
-            <Link href={'#'}>තොරණ</Link>
-            <Link href={'#'}>වෙසක් කූඩුව</Link>
-            <Link href={'#'}>දහම් කරුණු</Link>
-            <Link href={'#'}>පිරිත්</Link>
+          <Stack direction={'row'} spacing={{base: '20px', md: '40px',}}>
+            <Link fontSize={{base: 'sm', md: 'lg',}} href={'/thorana'}>තොරණ</Link>
+            <Link fontSize={{base: 'sm', md: 'lg',}} href={'/lantern'}>වෙසක් කූඩුව</Link>
+            <Link fontSize={{base: 'sm', md: 'lg',}} href={'#'}>දහම් කරුණු</Link>
+            <Link fontSize={{base: 'sm', md: 'lg',}} href={'#'}>පිරිත්</Link>
           </Stack>
         </Container>
   
@@ -100,7 +100,7 @@ import {
             maxW={'6xl'}
             py={4}
             direction={{ base: 'column', md: 'row' }}
-            spacing={4}
+            spacing={{base: '1', md: '4',}}
             justify={'center'}
             align={'center'}>
             <Text textAlign={'center'} color={useColorModeValue("ash.700", "ash.300")} fontSize="xs">

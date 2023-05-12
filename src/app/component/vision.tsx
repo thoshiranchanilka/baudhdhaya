@@ -12,13 +12,13 @@ import {
 
 export default function vision() {
   return (
-    <Flex background={useColorModeValue("pearl.50", "tuatara.950")}>
+    <Flex background={useColorModeValue("pearl.50", "tuatara.950")} px={{ base: '20px', md: '0', }}>
     <Container 
       maxW='6xl' 
       py={12}
       pt='12'
       pb='12'
-      px='20'
+      px={{base: '10', md: '20',}}
       mx='auto'
       background={useColorModeValue("pearl.100", "tuatara.800")}
       border='1px'
@@ -46,8 +46,8 @@ export default function vision() {
           />
         </Flex>
       <Stack spacing={4} mt={2}>
-          <Heading color={useColorModeValue("ash.800", "ash.200")} mb='3'>අරමුණ</Heading>
-          <Text color={useColorModeValue("ash.700", "ash.300")} fontSize={'lg'} textAlign={'justify'}>
+          <Heading fontSize={{base: '2xl', md: '4xl',}} textAlign={{base: 'center', md: 'left',}} color={useColorModeValue("ash.800", "ash.200")} mb='3'>අරමුණ</Heading>
+          <Text color={useColorModeValue("ash.700", "ash.300")} fontSize={{base: 'sm', md: 'lg',}} textAlign={'justify'}>
           ශ්‍රී ලංකාවේ තාක්ශනය සමග වේගයෙන් දියුණු වන තරුණ තරුණියන්ගෙ දැනුම මෙන්ම 
           ආධ්‍යාත්මික සුවය වැඩිදියුණු කිරිම හා එමගින් සමාජයෙ ඇතිවන ප්‍රභල ගැටලු මැඩ 
           පවත්වාගැනිමට හැකි පමණින් දායක වීම මෙම වෙබ් අඩවියෙ අරමුණයි.<br/><br/><br/><br/>

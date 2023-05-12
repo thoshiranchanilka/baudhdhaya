@@ -12,13 +12,13 @@ import {
 
 export default function feature03() {
   return (
-    <Flex background={useColorModeValue("pearl.50", "tuatara.950")}>
+    <Flex background={useColorModeValue("pearl.50", "tuatara.950")} px={{ base: '20px', md: '0', }}>
     <Container 
       maxW='6xl' 
       py={12}
       pt='12'
       pb='12'
-      px='20'
+      px={{base: '10', md: '20',}}
       mx='auto'
       background={useColorModeValue("pearl.100", "tuatara.800")}
       border='1px'
@@ -29,8 +29,8 @@ export default function feature03() {
       >
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
       <Stack spacing={4} mt={2}>
-          <Heading color={useColorModeValue("ash.800", "ash.200")} mb='3'>සත් සතිය</Heading>
-          <Text color={useColorModeValue("ash.700", "ash.300")} fontSize={'lg'} textAlign={'justify'}>
+          <Heading fontSize={{base: '2xl', md: '4xl',}} textAlign={{base: 'center', md: 'left',}} color={useColorModeValue("ash.800", "ash.200")} mb='3'>සත් සතිය</Heading>
+          <Text fontSize={{base: 'sm', md: 'lg',}} color={useColorModeValue("ash.700", "ash.300")} textAlign={'justify'}>
           සිදුහත් බෝසතානෝ වෙසක් මස පුර පසලොස්වක පොහොය දින සම්මා සම්බුද්ධත්වයට පත් වූ සේක. 
           බුද්ධත්වයෙන් පසු සති හතක්ම බුදුරජාණන් වහන්සේ ජයශී මහ බෝධි සෙවණ හා එ ඇසුරෙහි සමවත් 
           සුවයෙන් කාලය ගතකල සේක. එම සත් සතිය පිලිවෙලින්, බෝරුක මුල වැඩ සිටීම, අනිමිසලෝචන පූජාව, 
@@ -41,7 +41,7 @@ export default function feature03() {
           <Button
             as={'a'}
             target={'_blank'}
-            href={'#'}
+            href={'/thorana'}
             maxW={'140px'}
             mx={'auto'}
             px={4}

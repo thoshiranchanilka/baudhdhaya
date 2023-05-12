@@ -12,13 +12,13 @@ import {
   
   export default function feature01() {
     return (
-      <Flex background={useColorModeValue("pearl.50", "tuatara.950")}>
+      <Flex background={useColorModeValue("pearl.50", "tuatara.950")} px={{ base: '20px', md: '0', }}>
       <Container 
         maxW='6xl' 
         py={12}
         pt='12'
         pb='12'
-        px='20'
+        px={{base: '10', md: '20',}}
         mx='auto'
         background={useColorModeValue("pearl.100", "tuatara.800")}
         border='1px'
@@ -29,8 +29,8 @@ import {
         >
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4} mt={2}>
-            <Heading color={useColorModeValue("ash.800", "ash.200")} mb='3'>බුද්ධාගම යනු ?</Heading>
-            <Text color={useColorModeValue("ash.700", "ash.300")} fontSize={'lg'} textAlign={'justify'}>
+            <Heading fontSize={{base: '2xl', md: '4xl',}} textAlign={{base: 'center', md: 'left',}} color={useColorModeValue("ash.800", "ash.200")} mb='3'>බුද්ධාගම යනු ?</Heading>
+            <Text fontSize={{base: 'sm', md: 'lg',}} color={useColorModeValue("ash.700", "ash.300")} textAlign={'justify'}>
             බුද්ධාගම යනු බුද්ධ ධර්මය හෙවත් බුදු දහම පාදක කොට ගොඩනැගුනු ආගමකි. 
             ගෞතම බුදු රජාණන් වහන්සේ විසින් ඉගැන්වීම් මත පදනම් වූ  දහමකි. 
             එය ඉන්දියානු ආගමක් සහ දර්ශනකි.එය ආසියාවේ බොහෝ ප්‍රදේශ හරහා ව්‍යාප්ත වූ 

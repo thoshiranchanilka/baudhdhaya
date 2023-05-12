@@ -54,7 +54,7 @@ import {
         direction='column-reverse'
         width='full'
         rounded='3xl'
-        p={7}
+        p={{ base: '5', md: '7', }}
         justifyContent='center'
         position='relative'
         background={useColorModeValue("pearl.100", "tuatara.800")}
@@ -72,7 +72,8 @@ import {
           direction={'column'}
           textAlign={'center'}
           justifyContent={'center'}
-          textColor={useColorModeValue("ash.800", "ash.200")}>
+          textColor={useColorModeValue("ash.800", "ash.200")}
+          px={{ base: '21px', md: '0', }}>
           <Heading
             fontSize={'lg'}
             pb={2}>
@@ -80,7 +81,7 @@ import {
           </Heading>
           <Box maxW={'200px'} mx={'auto'}>
           <Text 
-            textAlign={'justify'}
+            textAlign={{base: 'center', md: 'justify',}}
             fontSize={'sm'} 
             fontWeight={'md'} 
             textColor={useColorModeValue("ash.700", "ash.300")}>
@@ -114,7 +115,8 @@ import {
         justifyContent={'center'}
         direction={'column'}
         width={'full'}
-        overflow={'hidden'}>
+        overflow={'hidden'}
+        px={{ base: '20px', md: '0', }}>
         <Box
           maxW='6xl'
           width='100%'
@@ -129,7 +131,7 @@ import {
           rounded='3xl'
           mt='6'
         >
-        <Heading textAlign={'center'} fontSize={'4xl'} color={useColorModeValue("gray.800", "whiteAlpha.900")}>
+        <Heading textAlign={'center'} fontSize={{base: '2xl', md: '4xl',}} color={useColorModeValue("ash.800", "ash.200")}>
           ප්‍රයෝජනවත් දේවල්.
         </Heading>
         </Box>
