@@ -86,7 +86,7 @@ import {
           <Button
               as={'a'}
               target={'_blank'}
-              href={'#'}
+              href={'https://si.wikipedia.org/wiki/%E0%B6%B6%E0%B7%94%E0%B6%AF%E0%B7%8A%E0%B6%B0%E0%B7%8F%E0%B6%9C%E0%B6%B8'}
               maxW={'140px'}
               mx={'auto'}
               px={4}
