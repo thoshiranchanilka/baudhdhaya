@@ -9,7 +9,6 @@ import {
     Image,
     VisuallyHidden,
     createIcon,
-    Flex,
   } from '@chakra-ui/react';
   import { ReactNode } from 'react';
   

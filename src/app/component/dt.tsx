@@ -4,7 +4,6 @@ import {
     useColorModeValue,
     Flex,
     Box,
-    Kbd,
   } from '@chakra-ui/react';
   
   export default function thorana() {
@@ -33,7 +32,7 @@ import {
           rounded='3xl'>
             <Box  shadow='xl' border='1px' borderColor={useColorModeValue("tuatara.100", "tuatara.600")}>
             <video className='videoTag' autoPlay loop muted>
-            <source src={'/thorana.mp4'} type='video/mp4' />
+            <source src={'/thoranac.mp4'} type='video/mp4' />
             </video>
             </Box>
         </Box>
@@ -70,6 +69,7 @@ import {
         borderColor={useColorModeValue("tuatara.100", "tuatara.600")}
         rounded='full'
         mt={{base: '6', md: '0',}}
+        preload='none'
         >
           <source src="/thorana.mp3" type="audio/mpeg"/>
       </Box>

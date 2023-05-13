@@ -10,6 +10,23 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 
+const Pic = (_props: any) => {
+  return (
+    <Image 
+      src={useColorModeValue('/f03w.png', '/f03b.png')} 
+      alt='feature03' 
+      border='1px'
+      borderColor={useColorModeValue("tuatara.100", "tuatara.600")}
+      rounded='3xl'
+      shadow='lg'
+      objectFit='cover'
+      _hover={{
+          shadow: '2xl',
+          transition: '1s ease',
+       }}/>
+  );
+};
+
 export default function feature03() {
   return (
     <Flex background={useColorModeValue("pearl.50", "tuatara.950")} px={{ base: '20px', md: '0', }}>
@@ -61,21 +78,7 @@ export default function feature03() {
           </Button>
         </Stack>
       <Flex>
-          <Image
-            border='1px'
-            borderColor={useColorModeValue("tuatara.100", "tuatara.600")}
-            rounded='3xl'
-            shadow='lg'
-            alt='feature image'
-            src={
-              '/f03.png'
-            }
-            objectFit='cover'
-            _hover={{
-              shadow: '2xl',
-              transition: '1s ease',
-            }}
-          />
+          <Pic />
         </Flex>
       </SimpleGrid>
     </Container>

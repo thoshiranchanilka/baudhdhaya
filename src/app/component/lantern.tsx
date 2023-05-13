@@ -6,6 +6,7 @@ import {
     Box,
     Kbd,
     Center,
+    Button,
   } from '@chakra-ui/react';
   
   
@@ -32,7 +33,7 @@ import {
         <Center> 
           <Box mt='12'>
             <video className='videoTag' autoPlay loop muted >
-            <source src={'/lantern.mp4'} type='video/mp4' />
+            <source src={'/lanternc.mp4'} type='video/mp4' />
             </video>
           </Box>
         </Center>
@@ -51,9 +52,36 @@ import {
         boxShadow='xl'
         rounded='3xl'
         mt='6'
-      ><Heading textAlign={'center'} fontSize={{base: 'md', md: '2xl',}} fontWeight="medium" color={useColorModeValue("ash.800", "ash.200")}>
-      වෙසක් කූඩුවේ ආලෝකය නිවීමට හා දැල්වීමට යතුරුපුවරුවේ <Kbd> 0 </Kbd>&nbsp;ඔබන්න.
-      </Heading></Container>
+      >
+        <Heading textAlign={'center'} fontSize={{base: 'md', md: '2xl',}} fontWeight="medium" color={useColorModeValue("ash.800", "ash.200")}>
+        ත්‍රිමාණ අටපට්ටම ඔබට අවැසි ලෙස හරවා බැලීමට මෙතනින් පිවිසෙන්න.
+      </Heading>
+      <Center>
+      <Button
+              as={'a'}
+              target={'_blank'}
+              href={'/3dlantern'}
+              maxW={'140px'}
+              mx={'auto'}
+              px={4}
+              fontSize={'md'}
+              shadow={'lg'}
+              rounded={'2xl'}
+              bg='flemingo.500'
+              color={'ash.100'}
+              mt="4"
+        
+              _hover={{
+                  color: "ash.50",
+                  bg: "flemingo.700",
+                  boxShadow: "xl",
+                  transition: '0.5s ease',
+              }}
+              >
+              පිවිසෙන්න.
+            </Button>
+          </Center>
+      </Container>
       </Flex>
       </>
     );

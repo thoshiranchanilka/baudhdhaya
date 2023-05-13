@@ -7,7 +7,6 @@ import {
   useColorModeValue,
   useColorMode,
   Button,
-  Center,
 } from '@chakra-ui/react';
 
 const Logo = (_props: any) => {
@@ -40,7 +39,7 @@ const { colorMode, toggleColorMode } = useColorMode();
           <HStack spacing={8} alignItems={'center'} display={{ base: 'none', md: 'block'}}>
             <Button variant='ghost' rounded='2xl' fontWeight='medium' as='a' href='/thorana' color={useColorModeValue("ash.700", "ash.300")}>තොරණ</Button>
             <Button variant='ghost' rounded='2xl' fontWeight='medium' as='a' href='/lantern' color={useColorModeValue("ash.700", "ash.300")}>වෙසක් කූඩුව</Button>
-            <Button variant='ghost' rounded='2xl' fontWeight='medium' color={useColorModeValue("ash.700", "ash.300")}>දහම් කරුණු</Button>
+            <Button variant='ghost' rounded='2xl' fontWeight='medium' as='a' href='/buddhagama' color={useColorModeValue("ash.700", "ash.300")}>දහම් කරුණු</Button>
           </HStack>
           <Button onClick={toggleColorMode} variant='ghost' rounded='2xl' color={useColorModeValue("ash.700", "ash.300")} >
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}

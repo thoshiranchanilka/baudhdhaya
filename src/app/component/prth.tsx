@@ -148,6 +148,7 @@ import {
         borderColor={useColorModeValue("tuatara.100", "tuatara.600")}
         rounded='3xl'
         mt={{base: '6', md: '0',}}
+        preload='none'
         >
           <source src={a} type="audio/mpeg"/>
       </Box>

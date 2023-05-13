@@ -56,7 +56,7 @@ export default function vision() {
           <Button
             as={'a'}
             target={'_blank'}
-            href={'#'}
+            href={'/information'}
             maxW={'140px'}
             mx={'auto'}
             px={4}
