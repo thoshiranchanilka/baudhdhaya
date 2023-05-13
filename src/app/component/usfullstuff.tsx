@@ -10,20 +10,20 @@ import {
   
   const card = [
     {
-      title: 'පිරිත්.',
+      title: 'පිරිත් දේශනා.',
       des:
-        'සියලුම පිරිත් ඇසීම සදහා පිවිසෙන්න.',
+        'සියලුම පිරිත් දේශනා ඇසීම සදහා පිවිසෙන්න.',
       img:
         '/card01.png',
-      a: '#',
+      a: '/pirith',
     },
     {
-      title: 'බණ.',
+      title: 'ධර්ම දේශනා.',
       des:
-        'යූ ටියුබ් හි පල වූ බණ නැරඹීමට පිවිසෙන්න.',
+        'යූ ටියුබ් හි පල වූ ධර්ම දේශනා නැරඹීමට පිවිසෙන්න.',
       img:
         '/card02.png',
-      a: '#',
+      a: '/bana',
     },
     {
       title: 'බැති ගී.',
@@ -31,7 +31,7 @@ import {
         'අන්තර්ජාලයෙ හි පල වූ බැති ගී ශ්‍රවනය කිරීමට පිවිසෙන්න.',
       img:
         '/card03.png',
-      a: '#',
+      a: '/bathigee',
     },
   ];
   
@@ -81,7 +81,7 @@ import {
           </Heading>
           <Box maxW={'200px'} mx={'auto'}>
           <Text 
-            textAlign={{base: 'center', md: 'justify',}}
+            textAlign={{base: 'center'}}
             fontSize={'sm'} 
             fontWeight={'md'} 
             textColor={useColorModeValue("ash.700", "ash.300")}>

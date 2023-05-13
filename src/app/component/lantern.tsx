@@ -32,7 +32,7 @@ import {
         <Center> 
           <Box mt='12'>
             <video className='videoTag' autoPlay loop muted >
-            <source src={'/lantern.webm'} type='video/mp4' />
+            <source src={'/lantern.mp4'} type='video/mp4' />
             </video>
           </Box>
         </Center>

@@ -87,7 +87,7 @@ import {
             <Link fontSize={{base: 'sm', md: 'lg',}} href={'/thorana'}>තොරණ</Link>
             <Link fontSize={{base: 'sm', md: 'lg',}} href={'/lantern'}>වෙසක් කූඩුව</Link>
             <Link fontSize={{base: 'sm', md: 'lg',}} href={'#'}>දහම් කරුණු</Link>
-            <Link fontSize={{base: 'sm', md: 'lg',}} href={'#'}>පිරිත්</Link>
+            <Link fontSize={{base: 'sm', md: 'lg',}} href={'/pirith'}>පිරිත්</Link>
           </Stack>
         </Container>
   
