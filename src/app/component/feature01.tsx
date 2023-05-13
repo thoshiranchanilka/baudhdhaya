@@ -43,7 +43,7 @@ import {
             <Button
               as={'a'}
               target={'_blank'}
-              href={'#'}
+              href={'/buddhagama'}
               maxW={'140px'}
               mx={'auto'}
               px={4}
