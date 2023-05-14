@@ -31,7 +31,7 @@ import {
           height={{base: '170px',md: '540px',}}
           rounded='3xl'>
             <Box  shadow='xl' border='1px' borderColor={useColorModeValue("tuatara.100", "tuatara.600")}>
-            <video className='videoTag' autoPlay loop muted>
+            <video className='videoTag' autoPlay loop muted controls>
             <source src={'/thoranac.mp4'} type='video/mp4' />
             </video>
             </Box>

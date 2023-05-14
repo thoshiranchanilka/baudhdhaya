@@ -32,7 +32,7 @@ import {
         </Heading>
         <Center> 
           <Box mt='12'>
-            <video className='videoTag' autoPlay loop muted >
+            <video className='videoTag' autoPlay loop muted controls>
             <source src={'/lanternc.mp4'} type='video/mp4' />
             </video>
           </Box>
