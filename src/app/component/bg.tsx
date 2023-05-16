@@ -150,7 +150,7 @@ import {
         height="352"
         px='auto'
         as='iframe'
-        src="https://open.spotify.com/embed/playlist/34NOX1eicS9aemohpKhRJy?utm_source=generator&theme=0"
+        src="https://open.spotify.com/embed/playlist/2HCPMse9nEQWSgTjDERNkv?utm_source=generator&theme=0"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
         rounded='3xl'
         shadow='xl'
